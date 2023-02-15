@@ -17,8 +17,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 0;
+    width: 0;
     background-image: url(../images/pixel-gif-stars-1.gif) ;
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
@@ -32,8 +32,8 @@
     z-index: 2;
     right: 20px;
     top: 20px;
-    height: 50px;
-    width: 50px;
+    height: 0;
+    width: 0;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -106,7 +106,7 @@
     color: #000000;
   }
   .fas{
-    width: 70%;
+    width: 0;
     position: relative;
     top: -5%;
   }
@@ -362,3 +362,95 @@ a{
 .dropdown:hover .dropbtn {
     transition: max-height 0.25s ease-in;
 } 
+.interface{
+    width: 95%;
+    position: relative;
+    top: 15%;
+}
+.ecr{
+    font-size: 0;
+}
+@media screen and (max-width: 500px) {
+    .interface{
+        width: 0;
+    }
+    .ecr{
+        font-size: large;
+    }
+}
+
+
+
+
+.mendroit{
+    text-align: center;
+    background-color: gray;
+    border-radius: 30px;
+    position: relative;
+    left: -5%;
+}
+.dropbtm {
+    background-color: gray;
+    color: blue ;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    min-width: 160px;
+    font-family: Pixeloid;
+} 
+.dropdowm {
+    position: relative;
+    display: inline-block;
+}
+.dropdowm-content {
+    position: absolute;
+    z-index: 98;
+    max-height: 0;
+    min-width: 160px;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+.dropdowm-content a {
+    color: blue;
+    background-color: rgb(124, 124, 124);
+    text-decoration: none;
+    display: block;
+}
+.dropdowm:hover .dropdowm-content {
+    max-height: 500px;
+    min-width: 160px;
+    transition: max-height 0.25s ease-in;
+} 
+.dropdown:hover .dropbtm {
+    transition: max-height 0.25s ease-in;
+} 
+@media screen and (max-width: 1200px) {
+    .dropbtm {
+        min-width: 130px;
+    } 
+    .dropdowm:hover .dropdowm-content {
+        min-width: 130px;
+    } 
+}
+@media screen and (max-width: 1000px) {
+    .menu-btn{
+        height: 50px;
+        width: 50px;
+    }
+    .fas{
+        width: 70%;
+    }
+    .wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .mendroit{
+        width: 0;
+        font-size: 0;
+    }
+    .dropdowm {
+        top: -3000px;
+    }
+    
+}
