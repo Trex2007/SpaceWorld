@@ -378,10 +378,6 @@ a{
         font-size: large;
     }
 }
-
-
-
-
 .mendroit{
     text-align: center;
     background-color: gray;
@@ -453,4 +449,64 @@ a{
         top: -3000px;
     }
     
+}
+.vid{
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    top: 1220px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: gray;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+.footer2 {
+    position: absolute;
+    top: 1620px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: gray;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+.footer3 {
+    position: absolute;
+    top: 2120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: gray;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+@media screen and (min-width: 1600px) {
+    .footer {
+        top: 1520px;
+    }    
+    .footer2 {
+        top: 1920px;
+    }  
+    .footer3 {
+        top: 2420px;
+    }  
 }
